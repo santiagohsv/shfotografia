@@ -1,0 +1,34 @@
+hr {
+  border: 2px solid black;
+  width: 80vw;
+  text-align: center;
+}
+
+.row_blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*  font-family: "Montserrat", sans-serif, arial;
+ */
+  .card_blog {
+    width: 80vw;
+    font-family: "Kaisei Decol", serif;
+
+    ul li {
+      list-style: url(../media/aperture.png);
+    }
+
+    h2 {
+      text-transform: uppercase;
+    }
+    img {
+      float: right;
+      width: 30vw;
+      margin-left: 10px;
+
+      @media (max-width: 890px) {
+        display: none;
+      }
+    }
+  }
+}

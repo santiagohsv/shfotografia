@@ -1,0 +1,36 @@
+header {
+  height: 74px;
+  /* height: 74px; */
+
+  .custom-bg {
+    background: $color-p;
+    opacity: 0.8;
+  }
+
+  .titulogeneral {
+    font-family: "Economica", sans-serif;
+    font-size: 2rem;
+
+    @media (max-width: 332px) {
+      display: none;
+    }
+  }
+
+  .titulogeneral_long {
+    font-family: "Economica", sans-serif;
+    font-size: 2rem;
+
+    @media (max-width: 690px) {
+      display: none;
+    }
+  }
+
+  .titulogeneral_short {
+    font-family: "Economica", sans-serif;
+    font-size: 2rem;
+
+    @media (min-width: 690px) {
+      display: none;
+    }
+  }
+}

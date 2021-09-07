@@ -1,0 +1,100 @@
+// FORMULARIO //
+
+.formContact {
+  background-image: url(../media/form-bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 87vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: "Fira Sans Condensed", sans-serif;
+  position: relative;
+
+  .form_contaier {
+    width: 100vw;
+    margin-bottom: 0vh;
+    background-color: black;
+    border-radius: 5px;
+    opacity: 0.4;
+    position: absolute;
+    bottom: 0;
+
+    @media only screen and (min-width: 480px) {
+      width: 60vw;
+      bottom: 20vh;
+    }
+
+    @media only screen and (min-width: 769px) {
+      width: 458px;
+      bottom: 20vh;
+    }
+  }
+  .formtittle {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+
+    .formTittle__text {
+      color: white;
+    }
+  }
+
+  .name_container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 10px;
+
+    .N_Form {
+      background-color: transparent;
+      border-color: white;
+      padding-left: 2px;
+      color: white;
+      opacity: 1;
+      width: 49.5%;
+    }
+    .A_Form {
+      background-color: transparent;
+      border-color: white;
+      padding-left: 2px;
+      color: white;
+      opacity: 1;
+      width: 49.5%;
+    }
+  }
+  .mailForm {
+    background-color: transparent;
+    border-color: white;
+    padding-left: 2px;
+    color: white;
+    margin-top: 4px;
+    width: 90%;
+    margin: 10px;
+  }
+
+  .msgForm {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    padding-left: 2px;
+    margin-top: 4px;
+    width: 90%;
+    height: 60px;
+    margin: 10px;
+  }
+
+  .boton {
+    background-color: rgba(255, 255, 255, 0.483);
+    border-radius: 5px;
+    color: white;
+    width: 60px;
+    margin: 10px;
+    &:hover {
+      background-color: white;
+    }
+  }
+}

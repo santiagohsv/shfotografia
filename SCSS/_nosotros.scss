@@ -1,0 +1,41 @@
+.aboutMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 87vh;
+  background-image: url(../media/about-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Open Sans Condensed", sans-serif;
+
+  .aboutTxt {
+    background-color: rgba(42, 62, 62, 0.422);
+    height: 99%;
+    width: 650px;
+    height: 350px;
+    border-radius: 10px;
+
+    @media screen and (min-width: 1058px) {
+      position: absolute;
+      left: 200px;
+      top: 15vh;
+    }
+
+    .aboutText__descrip {
+      color: white;
+      font-size: 1rem;
+      margin: 10px;
+    }
+  }
+}
+
+/* MEDIA Q */
+
+/*
+  text-align: left;
+  font-family: "Oswald", sans-serif;
+  height: 100vh;
+  background-image: url(../media/about-bg.jpg);
+  background-size: cover;
+*/

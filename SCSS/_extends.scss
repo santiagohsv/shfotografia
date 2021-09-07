@@ -1,0 +1,14 @@
+%index_font {
+  font-size: 2rem;
+  color: white;
+  font-family: "IM Fell English", serif;
+}
+
+%index_font_p {
+  font-size: 2rem;
+  font-family: "Playfair Display SC", serif;
+  color: white;
+  @media (min-width: 698px) {
+    font-size: 3rem;
+  }
+}

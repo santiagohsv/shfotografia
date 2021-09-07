@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box; }
+
+.indexMain .indexMain__text {
+  font-size: 2rem;
+  color: white;
+  font-family: "IM Fell English", serif; }
+
+.indexNocturna a .index__p, .indexPaisaje a .index__p, .indexNatura a .index__p {
+  font-size: 2rem;
+  font-family: "Playfair Display SC", serif;
+  color: white; }
+  @media (min-width: 698px) {
+    .indexNocturna a .index__p, .indexPaisaje a .index__p, .indexNatura a .index__p {
+      font-size: 3rem; } }
+
+body {
+  background: #bdcdc77c; }
+
+header {
+  height: 74px;
+  /* height: 74px; */ }
+  header .custom-bg {
+    background: #abbab5;
+    opacity: 0.8; }
+  header .titulogeneral {
+    font-family: "Economica", sans-serif;
+    font-size: 2rem; }
+    @media (max-width: 332px) {
+      header .titulogeneral {
+        display: none; } }
+  header .titulogeneral_long {
+    font-family: "Economica", sans-serif;
+    font-size: 2rem; }
+    @media (max-width: 690px) {
+      header .titulogeneral_long {
+        display: none; } }
+  header .titulogeneral_short {
+    font-family: "Economica", sans-serif;
+    font-size: 2rem; }
+    @media (min-width: 690px) {
+      header .titulogeneral_short {
+        display: none; } }
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0; }
+  footer .footerContainer {
+    width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none; }
+    footer .footerContainer a {
+      margin: 2px; }
+
+.indexMain {
+  background-image: url(../media/index_bg_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  opacity: 1.1;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+.indexNocturna {
+  background-image: url(../media/index_bg_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 70%;
+  height: 90vh;
+  margin: auto;
+  margin-bottom: 50px;
+  opacity: 0.6; }
+  .indexNocturna:hover {
+    opacity: 0.9; }
+  .indexNocturna a {
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center; }
+
+.indexPaisaje {
+  background-image: url(../media/index_bg_3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 70%;
+  height: 90vh;
+  margin: auto;
+  margin-bottom: 50px;
+  opacity: 0.6; }
+  .indexPaisaje:hover {
+    opacity: 0.9; }
+  .indexPaisaje a {
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center; }
+
+.indexNatura {
+  background-image: url(../media/index_bg_4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 70%;
+  height: 90vh;
+  margin: auto;
+  margin-bottom: 50px;
+  opacity: 0.6; }
+  .indexNatura:hover {
+    opacity: 0.9; }
+  .indexNatura a {
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center; }
+
+.aboutMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 87vh;
+  background-image: url(../media/about-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Open Sans Condensed", sans-serif; }
+  .aboutMain .aboutTxt {
+    background-color: rgba(42, 62, 62, 0.422);
+    height: 99%;
+    width: 650px;
+    height: 350px;
+    border-radius: 10px; }
+    @media screen and (min-width: 1058px) {
+      .aboutMain .aboutTxt {
+        position: absolute;
+        left: 200px;
+        top: 15vh; } }
+    .aboutMain .aboutTxt .aboutText__descrip {
+      color: white;
+      font-size: 1rem;
+      margin: 10px; }
+
+/* MEDIA Q */
+/*
+  text-align: left;
+  font-family: "Oswald", sans-serif;
+  height: 100vh;
+  background-image: url(../media/about-bg.jpg);
+  background-size: cover;
+*/
+.titulo_galeria {
+  margin: 10px;
+  display: flex;
+  justify-content: center; }
+
+.contenedorGaleria {
+  display: grid;
+  grid-auto-rows: 300px; }
+  @media (min-width: 768px) {
+    .contenedorGaleria {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 300px;
+      grid-gap: 10px;
+      margin: 10px; } }
+  @media (min-width: 768px) {
+    .contenedorGaleria .itemsGaleria:hover {
+      filter: grayscale(80%); }
+    .contenedorGaleria .itemsGaleria:nth-child(4) {
+      grid-column-start: span 2; }
+    .contenedorGaleria .itemsGaleria:nth-child(5) {
+      grid-row-start: span 2; }
+    .contenedorGaleria .itemsGaleria:nth-child(9) {
+      grid-column-start: span 2; } }
+  .contenedorGaleria .itemsGaleria .imagenGaleria {
+    width: 100vw;
+    height: 100%;
+    border-radius: 4px;
+    object-fit: cover; }
+    @media (min-width: 768px) {
+      .contenedorGaleria .itemsGaleria .imagenGaleria {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; } }
+
+hr {
+  border: 2px solid black;
+  width: 80vw;
+  text-align: center; }
+
+.row_blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*  font-family: "Montserrat", sans-serif, arial;
+ */ }
+  .row_blog .card_blog {
+    width: 80vw;
+    font-family: "Kaisei Decol", serif; }
+    .row_blog .card_blog ul li {
+      list-style: url(../media/aperture.png); }
+    .row_blog .card_blog h2 {
+      text-transform: uppercase; }
+    .row_blog .card_blog img {
+      float: right;
+      width: 30vw;
+      margin-left: 10px; }
+      @media (max-width: 890px) {
+        .row_blog .card_blog img {
+          display: none; } }
+
+.formContact {
+  background-image: url(../media/form-bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 87vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: "Fira Sans Condensed", sans-serif;
+  position: relative; }
+  .formContact .form_contaier {
+    width: 100vw;
+    margin-bottom: 0vh;
+    background-color: black;
+    border-radius: 5px;
+    opacity: 0.4;
+    position: absolute;
+    bottom: 0; }
+    @media only screen and (min-width: 480px) {
+      .formContact .form_contaier {
+        width: 60vw;
+        bottom: 20vh; } }
+    @media only screen and (min-width: 769px) {
+      .formContact .form_contaier {
+        width: 458px;
+        bottom: 20vh; } }
+  .formContact .formtittle {
+    width: 90%;
+    display: flex;
+    justify-content: center; }
+    .formContact .formtittle .formTittle__text {
+      color: white; }
+  .formContact .name_container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 10px; }
+    .formContact .name_container .N_Form {
+      background-color: transparent;
+      border-color: white;
+      padding-left: 2px;
+      color: white;
+      opacity: 1;
+      width: 49.5%; }
+    .formContact .name_container .A_Form {
+      background-color: transparent;
+      border-color: white;
+      padding-left: 2px;
+      color: white;
+      opacity: 1;
+      width: 49.5%; }
+  .formContact .mailForm {
+    background-color: transparent;
+    border-color: white;
+    padding-left: 2px;
+    color: white;
+    margin-top: 4px;
+    width: 90%;
+    margin: 10px; }
+  .formContact .msgForm {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    padding-left: 2px;
+    margin-top: 4px;
+    width: 90%;
+    height: 60px;
+    margin: 10px; }
+  .formContact .boton {
+    background-color: rgba(255, 255, 255, 0.483);
+    border-radius: 5px;
+    color: white;
+    width: 60px;
+    margin: 10px; }
+    .formContact .boton:hover {
+      background-color: white; }
+
+.page_404 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../media/bg-404.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  position: relative; }
+  .page_404 .container {
+    position: absolute;
+    top: 60%; }
+    .page_404 .container a {
+      font-family: "Montserrat", sans-serif;
+      color: white; }

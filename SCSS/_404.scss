@@ -1,0 +1,19 @@
+.page_404 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../media/bg-404.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  .container {
+    position: absolute;
+    top: 60%;
+    a {
+      font-family: "Montserrat", sans-serif;
+      color: white;
+    }
+  }
+}
