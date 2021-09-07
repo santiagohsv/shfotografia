@@ -22,17 +22,17 @@ body {
   background: #bdcdc77c; }
 
 header {
-  height: 74px;
+  height: 72px;
   /* height: 74px; */ }
   header .custom-bg {
     background: #abbab5;
     opacity: 0.8; }
-  header .titulogeneral {
-    font-family: "Economica", sans-serif;
-    font-size: 2rem; }
-    @media (max-width: 332px) {
-      header .titulogeneral {
-        display: none; } }
+  header .titulogeneral h1 {
+    font-size: 2rem;
+    font-family: "Economica", sans-serif; }
+  @media (max-width: 332px) {
+    header .titulogeneral {
+      display: none; } }
   header .titulogeneral_long {
     font-family: "Economica", sans-serif;
     font-size: 2rem; }
@@ -245,7 +245,7 @@ hr {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 87vh;
+  height: 86vh;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -269,7 +269,7 @@ hr {
         width: 458px;
         bottom: 20vh; } }
   .formContact .formtittle {
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: center; }
     .formContact .formtittle .formTittle__text {
@@ -277,7 +277,7 @@ hr {
   .formContact .name_container {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 96%;
     margin: 10px; }
     .formContact .name_container .N_Form {
       background-color: transparent;
@@ -299,7 +299,7 @@ hr {
     padding-left: 2px;
     color: white;
     margin-top: 4px;
-    width: 90%;
+    width: 96%;
     margin: 10px; }
   .formContact .msgForm {
     background-color: transparent;
@@ -307,7 +307,7 @@ hr {
     color: white;
     padding-left: 2px;
     margin-top: 4px;
-    width: 90%;
+    width: 96%;
     height: 60px;
     margin: 10px; }
   .formContact .boton {
